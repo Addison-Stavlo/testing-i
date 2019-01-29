@@ -2,6 +2,7 @@ module.exports = {
   success,
   failure
 };
+
 function nameItem(item) {
   if (item.level <= 15) {
     item.name = `[+${item.level}] ${item.baseName}`;
@@ -28,6 +29,10 @@ function nameItem(item) {
 
 function success(item) {
   if (item.level >= 20) {
+    return item;
+  } else if (item.level >= 15 && item.durability < 10) {
+    return item;
+  } else if (item.level < 15 && item.durability < 25) {
     return item;
   } else {
     item.level += 1;
