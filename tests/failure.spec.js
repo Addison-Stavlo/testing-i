@@ -22,6 +22,7 @@ describe("failure() method", () => {
     //assert/compare
     expect(testedItem).toEqual(expectedOutput);
   });
+
   test("level 6 weapon can't fail", () => {
     const exampleWeapon = {
       baseName: "Dwarven Axe",
@@ -42,6 +43,7 @@ describe("failure() method", () => {
     //assert/compare
     expect(testedItem).toEqual(expectedOutput);
   });
+
   test("failure below level 15 loses 5 durability", () => {
     const exampleWeapon = {
       baseName: "Dwarven Axe",
@@ -62,6 +64,7 @@ describe("failure() method", () => {
     //assert
     expect(testedItem).toEqual(expectedOutput);
   });
+
   test("failure above level 14 loses 10 durability", () => {
     const exampleWeapon = {
       baseName: "Dwarven Axe",
@@ -82,6 +85,7 @@ describe("failure() method", () => {
     //asser
     expect(testedItem).toEqual(expectedOutput);
   });
+
   test("failure above level 16 loses a level", () => {
     const exampleWeapon = {
       baseName: "Dwarven Axe",

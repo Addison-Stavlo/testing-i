@@ -67,6 +67,7 @@ describe("success() method", () => {
     //assert/compare
     expect(testedItem).toEqual(expectedOutput);
   });
+
   test("levels 14- cannot be enhanced if durability less than 25", () => {
     //setup
     const exampleWeapon = {
@@ -88,6 +89,7 @@ describe("success() method", () => {
     //assert/compare
     expect(testedItem).toEqual(expectedOutput);
   });
+
   test("levels 15+ cannot be enhanced if durability less than 10", () => {
     const exampleWeapon = {
       baseName: "Elven Warblade",
@@ -108,6 +110,7 @@ describe("success() method", () => {
     //assert/compare
     expect(testedItem).toEqual(expectedOutput);
   });
+
   test("levels 15+ will still enhance below 25durability", () => {
     const exampleWeapon = {
       baseName: "Elven Warblade",
