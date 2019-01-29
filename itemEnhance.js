@@ -1,6 +1,7 @@
 module.exports = {
   success,
-  failure
+  failure,
+  repair
 };
 
 function nameItem(item) {
@@ -58,5 +59,10 @@ function failure(item) {
       nameItem(item);
     }
   }
+  return item;
+}
+
+function repair(item) {
+  item.durability = 100;
   return item;
 }
